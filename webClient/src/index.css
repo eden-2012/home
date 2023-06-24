@@ -237,7 +237,6 @@ header .nav-links li:hover {
 }
 
 .contacts-section {
-  height: 465px;
   width: calc(100% - 200px);
   padding: 50px 100px;
 }
@@ -252,7 +251,6 @@ header .nav-links li:hover {
 }
 
 .contacts-content {
-  height: 400px;;
   display: flex;
   flex-direction: row;
 }
@@ -283,7 +281,6 @@ header .nav-links li:hover {
 
 .contact-form {
   display: flex;
-  height: 400px;
   flex-direction: column;
 }
 
@@ -446,10 +443,6 @@ section {
 
   .contacts-content {
     flex-direction: column-reverse;
-    height: fit-content;
-  }
-
-  .contact-form {
     height: fit-content;
   }
 
