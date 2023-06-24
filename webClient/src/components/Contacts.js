@@ -41,7 +41,9 @@ class Contacts extends React.Component {
                         <div className="address-title">{this.translate.addressTitle}</div>
                         <div className="address">{this.translate.addressContent}</div>
                         <div className="address">{this.translate.CEO} <br/>{this.translate.CEOName}</div>
-                        <div className="telephone-number">{this.translate.mobilePhoneNumber}</div>
+                        <div className="telephone-number">{this.translate.CEOMobilePhoneNumber}</div>
+                        <div className="address">{this.translate.logistician} <br/>{this.translate.logisticianName}</div>
+                        <div className="telephone-number">{this.translate.logisticianMobilePhoneNumber}</div>
                     </div>
                     <div className="contacts-block ">
                         <form className="contact-form">
