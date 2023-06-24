@@ -12,6 +12,8 @@ class Contacts extends React.Component {
         message: ''
     };
 
+    isSubmited = false;
+
     constructor(props) {
         super(props);
         
@@ -126,6 +128,8 @@ class Contacts extends React.Component {
     contactSubmit(e) {
         e.preventDefault();
 
+        this.isSubmited = true;
+
         if (this.handleValidation() && window.Email) {
             const config = {
                 SecureToken: '',
@@ -213,7 +217,7 @@ class Contacts extends React.Component {
             errors["message"] = messageError;
         }
     
-        this.setState({ errors: errors });
+        this.setState({ errors: this.isSubmited ? errors : {} });
     
         return formIsValid;
     }

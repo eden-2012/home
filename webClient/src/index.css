@@ -300,7 +300,7 @@ header .nav-links li:hover {
 }
 
 .error-text {
-  height: 40px;
+  height: 20px;
   width: 100%;
   font-size: 14px;
   font-family: Arial;
@@ -449,6 +449,10 @@ section {
     height: fit-content;
   }
 
+  .contact-form {
+    height: fit-content;
+  }
+
   .address-title {
     display: none;
   }
@@ -545,5 +549,9 @@ section {
     left: 18px;
     width: fit-content;
     font-size: 30px;
+  }
+
+  .message-field {
+    height: 250px;
   }
 }
