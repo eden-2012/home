@@ -66,8 +66,6 @@ class Header extends React.Component {
             isLangDialogOpened: !this.state.isLangDialogOpened,
             flag: this.getFlag() 
         });
-
-        this.setState({ isMobileMenuOpened: false });
     }
 
     getFlag() {
