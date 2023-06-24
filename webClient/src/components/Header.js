@@ -67,7 +67,7 @@ class Header extends React.Component {
             flag: this.getFlag() 
         });
 
-        this.setState({ isMobileMenuOpened: false })};
+        this.setState({ isMobileMenuOpened: false });
     }
 
     getFlag() {
