@@ -134,9 +134,9 @@ class Contacts extends React.Component {
 
         if (this.handleValidation() && window.Email) {
             const config = {
-                SecureToken: '',
-                To: '',
-                From: '',
+                SecureToken: process.env.NEXT_PUBLIC_SECURE_TOKEN,
+                To: process.env.NEXT_PUBLIC_EMAIL,
+                From: process.env.NEXT_PUBLIC_EMAIL,
                 Subject : "Повідомлення від https://eden-2012.github.io/home/",
                 Body : `
                     <p>${this.state.fields.message}</p>
