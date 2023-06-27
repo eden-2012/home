@@ -109,6 +109,7 @@ class Contacts extends React.Component {
 
         if (this.state.errors[field]) {
             let errors = this.state.errors;
+
             errors[field] = '';
             this.setState({ errors: errors });
         }
