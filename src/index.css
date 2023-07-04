@@ -266,17 +266,35 @@ header .nav-links li:hover {
   font-size: 20px;
 }
 
+.contact-icon {
+  font-size: 18px;
+  margin-left: 2px;
+}
+
 .address-section {
   color: rgb(2, 153, 2);
   width: 400px;
+}
+
+.phone-value {
+  margin-left: 5px;
 }
 
 .address,
 .telephone-number {
   margin-bottom: 10px;
   margin-top: 10px;
-  width: 180px;
   font-size: 14px;
+}
+
+.address {
+  width: 180px;
+}
+
+.telephone-number {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
 }
 
 .contact-form {

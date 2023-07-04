@@ -1,5 +1,7 @@
 import React from "react";
 import { ToastContainer, toast } from 'react-toastify';
+import { BsTelegram } from 'react-icons/bs';
+import { FaViber } from 'react-icons/fa';
 import 'react-toastify/dist/ReactToastify.css';
 
 class Contacts extends React.Component {
@@ -41,9 +43,23 @@ class Contacts extends React.Component {
                         <div className="address-title">{this.translate.addressTitle}</div>
                         <div className="address">{this.translate.addressContent}</div>
                         <div className="address">{this.translate.CEO} <br/>{this.translate.CEOName}</div>
-                        <div className="telephone-number">{this.translate.CEOMobilePhoneNumber}</div>
+                        <div className="telephone-number">
+                            <div>{this.translate.phoneNumber}</div> 
+                            
+                            <BsTelegram className="contact-icon" /> 
+                            <FaViber className="contact-icon" /> 
+
+                            <div className="phone-value">{this.translate.CEOMobilePhoneNumber}</div>
+                        </div>
                         <div className="address">{this.translate.logistician} <br/>{this.translate.logisticianName}</div>
-                        <div className="telephone-number">{this.translate.logisticianMobilePhoneNumber}</div>
+                        <div className="telephone-number">
+                            <div>{this.translate.phoneNumber}</div>
+
+                            <BsTelegram className="contact-icon" /> 
+                            <FaViber className="contact-icon" />
+
+                            <div className="phone-value">{this.translate.logisticianMobilePhoneNumber}</div>
+                        </div>
                     </div>
                     <div className="contacts-block ">
                         <form className="contact-form">
@@ -138,7 +154,7 @@ class Contacts extends React.Component {
                 SecureToken: process.env.REACT_APP_SECURE_TOKEN,
                 To: process.env.REACT_APP_EMAIL,
                 From: process.env.REACT_APP_EMAIL,
-                Subject : "Повідомлення від https://eden-2012.github.io/home/",
+                Subject : "Повідомлення від Eden 2012",
                 Body : `
                     <p>${this.state.fields.message}</p>
                     <br/>
