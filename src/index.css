@@ -209,7 +209,7 @@ header .nav-links li:hover {
   border: none;
   background-color: silver;
   height: 1px;
-  width: 260px;
+  width: 210px;
   margin: auto;
   margin-top: 10px;
 }
@@ -434,7 +434,7 @@ section {
 
 @media(max-width: 1070px) {
   .services-section {
-    height: 650px;
+    
   }
   
   .services-list {
