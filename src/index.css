@@ -558,6 +558,7 @@ section {
 @media(max-width: 500px) {
   .presentation-text {
     left: 18px;
+    right: 18px;
     width: fit-content;
     font-size: 30px;
   }
