@@ -209,7 +209,7 @@ header .nav-links li:hover {
   border: none;
   background-color: silver;
   height: 1px;
-  width: 210px;
+  width: 100%;
   margin: auto;
   margin-top: 10px;
 }
