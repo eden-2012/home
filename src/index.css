@@ -559,7 +559,7 @@ section {
   .presentation-text {
     left: 18px;
     right: 18px;
-    width: fit-content;
+    width: 80%;
     font-size: 30px;
   }
 
